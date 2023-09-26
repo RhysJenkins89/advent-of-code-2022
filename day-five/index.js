@@ -2,10 +2,11 @@ console.log("Hello from day five!");
 const fs = require("fs");
 
 const fileData = fs.readFileSync("testData.txt", "utf-8");
-const splitData = fileData.split("\n");
-console.log(splitData);
+const [stackData, instructionsData] = fileData.split("\n\n");
+console.log(stackData);
+console.log(typeof stackData);
 
-// splitInput.forEach((line) => {
+// stackData.forEach((line) => {
 //     console.log(line);
 // });
 
